@@ -7,7 +7,7 @@ if($_SESSION['login_status']==false){ //if one didn't enter the neccessary detai
     echo 'unauthorised entry, error 403:invalid';
     die;
 }
-if($_SESSION['usertype']!='customer'){
+if($_SESSION['usertype']!='vendor'){
     echo 'invalid entry';
     die;
     }
@@ -17,7 +17,7 @@ if($_SESSION['usertype']!='customer'){
         <div>".$_SESSION['userid']."</div>
         <div>".$_SESSION['username']."</div>
         <div>
-        <a href='../acmegradeproject1/customer/logout.php'>logout</a>
+        <a href='../acmegradeproject1/vendor/logout.php'>logout</a>
         </div>
         
     </div>";
